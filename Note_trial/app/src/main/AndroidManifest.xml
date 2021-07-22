@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.note_trial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Note_trial">
+        <activity android:name=".RegisterActivity"></activity>
+        <activity
+            android:name=".EditNoteActivity"
+            android:theme="@style/Theme.Note_trial.NoActionBar" />
+        <activity android:name=".notedetails"
+            android:theme="@style/Theme.Note_trial.NoActionBar"/>
+        <activity
+            android:name=".CreateNote"
+            android:theme="@style/Theme.Note_trial.NoActionBar" />
+        <activity android:name=".NotesActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

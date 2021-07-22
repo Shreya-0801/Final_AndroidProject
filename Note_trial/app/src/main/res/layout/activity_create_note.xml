@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateNote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+
+    >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarofcreatenote"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Enter your note title here"
+            android:id="@+id/createtitleofnote" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:gravity="top|left"
+        android:hint="Enter your note content here"
+        android:layout_below="@id/toolbarofcreatenote"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="15dp"
+        android:id="@+id/createcontentofnote">
+
+    </EditText>
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/toolbarofcreatenote"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:layout_marginBottom="100dp"-->
+<!--        android:id="@+id/image"/>-->
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/savenote"
+        android:src="@drawable/ic_baseline_save_24"
+        android:background="#A1F4FB"
+        android:tooltipText="Save"
+        app:maxImageSize="56dp"
+
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/addimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/image"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#A1F4FB"
+        android:src="@drawable/ic_baseline_image_24"
+        android:tooltipText="Add image"
+        android:onClick="addImage"
+        app:maxImageSize="56dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+-->
+</RelativeLayout>
